@@ -1,0 +1,13 @@
+#elems{
+	padding-top: 60px;
+
+}
+.elem{
+	height: 100px;
+	border: 2px solid #000;
+
+}
+.elem_in{
+	height: 50px;
+	background-color: green;
+}
