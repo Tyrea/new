@@ -1,0 +1,69 @@
+.main-head {
+	margin-top: 80px;
+}
+.header-logo-border{
+	width: 148px;
+	height: 50px;
+	border: 3px solid #706b73;
+	text-align: center;
+	line-height: 42px;
+	font-size: 36px;
+}
+.header-logo-border p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #706b73;
+}
+.header-logo-border span{
+	color: #FD8569;
+}
+
+.main-nav{
+	text-align: right;
+}
+.main-burger-menu{
+	width: 35px;
+}
+.line{
+	display: block;
+	width: 35px;
+	height: 4px;
+	background-color: #706b73;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	border-radius: 5px;
+	-webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+.line::before {
+	position: absolute;
+	width: 35px;
+	height: 4px;
+	background-color: #706b73;
+	right: 0;
+	top: 0;
+	content: '';
+	border-radius: 3px;
+	-webkit-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+.line::after {
+	position: absolute;
+	width: 35px;
+	height: 4px;
+	background-color: #706b73;
+	right: 0;
+	top: 0;
+	content: '';
+	border-radius: 3px;
+	-webkit-transform: translateY(8px);
+	-ms-transform: translateY(8px);
+	-o-transform: translateY(8px);
+	transform: translateY(8px);
+}
+
