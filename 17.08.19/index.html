@@ -8,10 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Kit's code here -->
     <script src="https://kit.fontawesome.com/5b3b39520c.js"></script>
-    <title>Hello, world!</title>
+    <title>Smart Agency Landing Page</title>
   </head>
   <body>
     <header id="main">
@@ -222,31 +224,241 @@
          </div>
          <div class="row">
            <div class="col-lg-2">
-             <ul class="services-list">
-               <li class="services-list-item"><img src="img/services/1st.png" alt="statistic1"></li>
-               <li class="services-list-item"><img src="img/services/settings.png" alt="settings"></li>
-               <li class="services-list-item"><img src="img/services/zoom.png" alt="zoom"></li>
-               <li class="services-list-item"><img src="img/services/1st.png" alt="statistic2"></li>
+             <ul class="services-list nav nav-tabs" role="tablist">
+               <li role="presentation" class="services-list-item active"><a href="#web" data-toggle="tab"aria-controls="web"><img src="img/services/1st.png" alt="statistic1"></a></li>
+               <li role="presentation" class="services-list-item"><a href="#app" data-toggle="tab" aria-controls="app"><img src="img/services/settings.png" alt="settings"></a></li>
+               <li role="presentation" class="services-list-item"><a href="#play" data-toggle="tab" aria-controls="play"><img src="img/services/zoom.png" alt="zoom"></a></li>
+               <li role="presentation" class="services-list-item"><a href="#global" data-toggle="tab" aria-controls="global"><img src="img/services/1st.png" alt="statistic2"></a></li>
              </ul>
            </div>
            <div class="col-lg-10">
-             <div class="services-info">
-              <div class="row">
+             <div class="services-info  tab-content">
+              <div role="tabpanel" class="row tab-pane fade in active" id="app">
                 <div class="col-lg-8">
                    <h4>Modern App Design</h4>
                    <span class="services-line"></span>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus nulla, beatae possimus, non voluptates sapiente sequi quis quaerat expedita qui culpa quas.<br><br>Consequatur dolor inventore perspiciatis consectetur magni unde eveniet quia magnam amet vel!</p>
                     <button class="services-btn"><span class="btn-plus">Know More</span></button>
                 </div>
+                <div class="col-lg-4">
+                  <img src="img/apple-watch.jpg" alt="apple-watch.jpg">
+                </div>
+             </div><!-- /row -->
+             <div role="tabpanel" class="row tab-pane fade" id="web">
+                <div class="col-lg-8">
+                   <h4>Modern Web Design</h4>
+                   <span class="services-line"></span>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus nulla, beatae possimus, non voluptates sapiente sequi quis quaerat expedita qui culpa quas.<br><br>Consequatur dolor inventore perspiciatis consectetur magni unde eveniet quia magnam amet vel!</p>
+                    <button class="services-btn"><span class="btn-plus">Know More</span></button>
+                </div>
+                <div class="col-lg-3">
+                  <img src="img/apple-watch.jpg" alt="apple-watch.jpg">
+                </div>
+             </div><!-- /row -->
+             <div role="tabpanel" class="row tab-pane fade" id="play">
+                <div class="col-lg-8">
+                   <h4>Modern Play Design</h4>
+                   <span class="services-line"></span>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus nulla, beatae possimus, non voluptates sapiente sequi quis quaerat expedita qui culpa quas.<br><br>Consequatur dolor inventore perspiciatis consectetur magni unde eveniet quia magnam amet vel!</p>
+                    <button class="services-btn"><span class="btn-plus">Know More</span></button>
+                </div>
+                <div class="col-lg-3">
+                  <img src="img/apple-watch.jpg" alt="apple-watch.jpg">
+                </div>
+             </div><!-- /row -->
+             <div role="tabpanel" class="row tab-pane fade" id="global">
+                <div class="col-lg-8">
+                   <h4>Modern Global Design</h4>
+                   <span class="services-line"></span>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus nulla, beatae possimus, non voluptates sapiente sequi quis quaerat expedita qui culpa quas.<br><br>Consequatur dolor inventore perspiciatis consectetur magni unde eveniet quia magnam amet vel!</p>
+                    <button class="services-btn"><span class="btn-plus">Know More</span></button>
+                </div>
+                <div class="col-lg-3">
+                  <img src="img/apple-watch.jpg" alt="apple-watch.jpg">
+                </div>
+             </div><!-- /row -->
+            </div>
+          </div>
+        </div><!-- /main-row -->
+      </div><!-- /container -->
+     </section> 
+     <section id="FAQ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 section-header text-center">
+            <h2><span>Frequently </span> Asked Question</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, libero, distinctio.</p>
+          </div>
+        </div><!-- /row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eaque, amet officiis voluptates atque tempora dicta ex! Quo ea, laboriosam consequatur, optio, dolores sint accusantium amet perferendis facilis nisi soluta debitis incidunt omnis doloribus libero dolor. Exercitationem consequatur aliquid facere, voluptatum asperiores facilis molestias qui rerum error, quos, omnis. Reprehenderit veniam sunt corrupti fugiat quae, quod error, dicta, distinctio voluptatem aliquam odit aut quidem quo nihil ab totam labore dolorem ipsam iusto quisquam dignissimos voluptate alias pariatur dolor? Culpa alias sed, voluptatibus. Autem iure nemo reiciendis accusantium in aperiam sequi modi reprehenderit nulla inventore quam quos veniam labore, rerum, impedit sed praesentium ipsum ipsam fugiat quasi blanditiis excepturi quibusdam? Doloremque dolore voluptatibus ipsa ipsam mollitia nulla voluptatem quos dolorem, perspiciatis at? Pariatur eum, doloremque reiciendis!
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa culpa autem assumenda reiciendis ducimus consequatur, veritatis iste eligendi voluptate. Sequi nam rem sunt blanditiis dicta nesciunt placeat vel incidunt esse fugit laborum est quos pariatur iste id maiores consequatur fugiat, adipisci ea repellat iure, veniam ipsum et excepturi. Nobis et est iste accusantium facilis ut asperiores! Consequuntur harum, tempore quo amet cupiditate ad sequi laborum. Officia, reprehenderit harum voluptas provident quidem quo, laboriosam sapiente alias sit rerum architecto qui, doloribus, deserunt nemo unde non! Quisquam eaque labore, sapiente perferendis soluta ex voluptates facere ea voluptate itaque vero corporis architecto, voluptatum adipisci dolorem quibusdam modi quos. Voluptates harum obcaecati mollitia expedita minima recusandae placeat dolores laborum quo reiciendis, ipsam fugit, architecto animi quia ea exercitationem. Error quis dolores natus, nam sit quibusdam sed atque, quas impedit qui quisquam et praesentium voluptatem repudiandae sequi, earum, temporibus. Quo inventore amet corrupti minima, molestias!
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div><!-- /accordion -->
+          </div>
+        </div><!-- /row -->
+      </div><!-- /container -->
+     </section>
+     <section id="feedback">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-12 section-header text-center">
+             <h2><span>Clients </span> said</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero soluta quas eligendi.</p>
+           </div>
+         </div><!-- /row -->
+         <div class="row">
+           <div class="col-lg-12">
+             <div class="feedback-slider">
+               <div class="feedback-slider-item text-center">
+                 <div class="feedback-box">
+                   <img  class="img-circle center-block feedback-img" src="img/feedback/7.png" alt="Kita">
+                     <div class="feedback-shadow"> 
+                        <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again."</p>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <p><span>Kita Say,</span> <i>HK Director</i></p>
+                    </div><!-- /feedback-shadow -->
+                 </div> 
+                 
+               </div>
+               <div class="feedback-slider-item">
+                 <div class="feedback-box">
+                   <img  class="img-circle feedback-img" src="img/feedback/4.jpg" alt="Kita">
+                   <div class="feedback-shadow"> 
+                      <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again."</p>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <p><span>Kita Say,</span> <i>HK Director</i></p>
+                  </div><!-- /feedback-shadow -->
+                 </div> 
+               </div>
+               <div class="feedback-slider-item">
+                 <div class="feedback-box">
+                   <img  class="img-circle feedback-img" src="img/feedback/5.jpg" alt="Kita">
+                   <div class="feedback-shadow"> 
+                      <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again."</p>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <p><span>Kita Say,</span> <i>HK Director</i></p>
+                  </div><!-- /feedback-shadow -->
+                 </div> 
+               </div>
+               <div class="feedback-slider-item">
+                 <div class="feedback-box">
+                   <img  class="img-circle feedback-img" src="img/feedback/6.jpg" alt="Kita">
+                   <div class="feedback-shadow"> 
+                      <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again."</p>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <p><span>Kita Say,</span> <i>HK Director</i></p>
+                  </div><!-- /feedback-shadow -->
+                 </div> 
+               </div>
+               <div class="feedback-slider-item">
+                 <div class="feedback-box">
+                   <img  class="img-circle feedback-img" src="img/feedback/1.jpg" alt="Kita">
+                   <div class="feedback-shadow"> 
+                      <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again."</p>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <p><span>Kita Say,</span> <i>HK Director</i></p>
+                  </div><!-- /feedback-shadow -->
+                 </div> 
+               </div>
+               <div class="feedback-slider-item">
+                 <div class="feedback-box">
+                   <img  class="img-circle feedback-img" src="img/feedback/2.jpeg" alt="Kita">
+                   <div class="feedback-shadow"> 
+                      <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again."</p>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <p><span>Kita Say,</span> <i>HK Director</i></p>
+                  </div><!-- /feedback-shadow -->
+                 </div> 
+               </div>
              </div>
            </div>
-         </div>
-       </div>
-     </section> 
+         </div><!-- /row -->
+       </div><!-- /container -->
+     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.feedback-slider').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: true,
+          prevArrow: '<i class="fa fa-chevron-left feedback-slider-arrows arrow-left"></i>',
+          nextArrow: '<i class="fa fa-chevron-right feedback-slider-arrows arrow-right"></i>',
+          dots: true
+        });
+      });
+    </script>
   </body>
 </html>

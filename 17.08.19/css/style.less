@@ -9,6 +9,8 @@
 @background-koire: #817eff;
 @background-lara: #f74770;
 @background-services-list: #fbfbfb;
+@yellow:#ffef3b;
+@grey:#adadad;
 .opn-reg {
 
 	font-family: 'Open Sans', sans-serif;
@@ -32,7 +34,7 @@ input, button, textarea {
 }
 section{
 	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 }
 .section-header{
 	margin-bottom: 5%;
@@ -51,9 +53,7 @@ section{
 header{
 	background: @background-grey url('../img/main-bg.jpg') no-repeat center center;
 	background-size: cover;
-	min-height: 600px;
-	// height: 100vh; - - убрала, потому что на моем маленьком экране 
-	// форма ниже фоновой картинки
+	min-height: 100vh;
 }
 .row{
 	margin-bottom: 35px;
@@ -322,10 +322,6 @@ i.fa-camera-retro{
 			height: 100px;
 			background: @background-services-list;
 			text-align: center;
-			&:hover{
-				background:@white;
-				box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
-			}
 		}
 	}
 	&-info{
@@ -357,4 +353,103 @@ i.fa-camera-retro{
 		box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
 		
 	}
+}
+.panel-default>.panel-heading{
+	background-color: @background-grey;
+	text-align: center;
+	.opn-bold;
+	 a{color:@base-red;
+	 	text-decoration: none;
+	 }
+	
+}
+.feedback{
+	position: relative;
+	&-box{
+		display: flex;
+		justify-content: center;
+		margin-top: 70px;
+		text-align: center;
+		padding: 15px;
+		img{
+			margin: 0 auto;
+			margin-bottom: 20px;
+			height: 128px;
+			border-radius: 50%;
+		}
+		p{
+			margin-top: 25px;
+			font-size: 17px;
+			padding-left: 30px;
+			padding-right: 30px;
+			margin-bottom: 25px;
+			i{
+				font-weight: 300;
+			}
+		}
+		i.fa-star{
+			color:@yellow;
+		}
+		span{
+			.opn-bold;
+		}
+	}
+	&-img{
+		position:absolute;
+		bottom:210px;
+		margin-left: 50%;
+
+	}
+	&-shadow{
+		padding: 10px;
+		padding-top: 40px;
+		box-shadow:0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+	}
+	&-slider-arrows{
+		position: absolute;
+		top: 50%;
+		width: 18px;
+		height: 18px;
+		z-index: 999;
+		transform: translateY(-8px);
+		padding: 15px;
+		padding-left: 16px;
+		text-align: center;
+		border-radius:50%;
+		box-shadow:0px 3px 14px 0px rgba(20, 20, 21, 0.28);
+		background-color:@white;
+		border: 1px solid lighten(@base-black, 50%);
+		&:hover{
+			background-color:@base-red;
+		}
+	}
+}
+.slick-active{
+	outline: none;
+}
+.arrow-right{
+	width: 50px;
+	height: 50px;
+	right: 0;
+	font-size: 20px;
+}
+.arrow-left{
+	width: 50px;
+	height: 50px;
+	left: 0;
+	font-size: 20px;
+}
+.slick-dots{
+	bottom:-50px;
+}
+.slick-dots li button:before{
+	width: 21px;
+	height: 7px;
+	background-color:@grey;
+	border-radius: 10px;
+	color:transparent;
+}
+.slick-dots li.slick-active button:before{
+	color: transparent;
+	background-color:@base-red;
 }
