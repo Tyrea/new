@@ -112,7 +112,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №1</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №2</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №3</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №4</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -159,7 +159,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №5</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №6</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №7</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -195,7 +195,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №8</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -206,7 +206,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work №9</p>
-                  <button>Visit Gallery</button>
+                  <button><a href="#popup">Visit Gallery</a></button>
                 </div>
               </div>
             </div>
@@ -502,9 +502,20 @@
     <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
 
     <!-- POPUP MODAL -->
-    <div class="popup-overlay">
+    <div id="popup" class="popup-overlay">
       <div class="popup">
-        
+        <a class="popup-close" href="#close">&times;</a>
+         <div id="galleria">
+            <a href="img/works.jpg"><img src="img/works.jpg" data-big="img/works.jpg" alt="1"></a>
+            <a href="img/works2.jpg"><img src="img/works2.jpg" data-big="img/works2.jpg" alt="2"></a>
+            <a href="img/works3.jpg"><img src="img/works3.jpg" data-big="img/works3.jpg" alt="3"></a>
+            <a href="img/works4.jpg"><img src="img/works4.jpg" data-big="img/works4.jpg" alt="4"></a>
+            <a href="img/works5.jpg"><img src="img/works5.jpg" data-big="img/works5.jpg" alt="5"></a>
+            <a href="img/works6.jpg"><img src="img/works6.jpg" data-big="img/works6.jpg" alt="6"></a>
+            <a href="img/works7.jpg"><img src="img/works7.jpg" data-big="img/works7.jpg" alt="7"></a>
+            <a href="img/works8.jpg"><img src="img/works8.jpg" data-big="img/works8.jpg" alt="8"></a>
+            <a href="img/works9.jpg"><img src="img/works9.jpg" data-big="img/works9.jpg" alt="9"></a>
+        </div>
       </div>
     </div>
     <!-- Optional JavaScript -->
@@ -515,6 +526,8 @@
     <script src="slick/slick.min.js"></script>
     <script src="js/snap.svg-min.js"></script>
     <script src="js/main.js"></script> 
+    <!-- load Galleria -->
+    <script src="js/galleria.js"></script>
     <script>
       $(document).ready(function(){
         $('.feedback-slider').slick({
@@ -526,6 +539,15 @@
           nextArrow: '<i class="fa fa-chevron-right feedback-slider-arrows arrow-right"></i>',
           dots: true
         });
+      });
+    </script>
+    <script>
+      $(function() {
+          // Load the classic theme
+          Galleria.loadTheme('classic/galleria.classic.js');
+
+          // Initialize Galleria
+          Galleria.run('#galleria');
       });
     </script>
   </body>
