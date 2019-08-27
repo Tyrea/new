@@ -6011,7 +6011,7 @@ Galleria.raise = function( msg, fatal ) {
             position: 'absolute',
             top: 0,
             left: 0,
-            zIndex: 100000
+            zIndex: 100000,
         },
 
         echo = function( msg ) {

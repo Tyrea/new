@@ -13,7 +13,6 @@
 @yellow:#ffef3b;
 @grey:#adadad;
 .opn-reg {
-
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: @base-text;
@@ -193,6 +192,8 @@ header{
 		padding-top: 35px;
 		color: @white;
 		text-align:center;
+		margin-bottom: 50px;
+
 		i.fa{
 			font-size: 50px;
 		}
@@ -214,7 +215,6 @@ header{
 	&-btn{
 		position: absolute;
 		left: 50%;
-		bottom: -30px;
 		margin-left: -113px;
 		border:none;
 		color: @base-black;
@@ -279,6 +279,7 @@ i.fa-camera-retro{
 	width: 360px;
 	height: 360px;
 	position: relative;
+	margin-bottom: 15px;
 }
 .signature{
 	opacity: 0;
@@ -909,4 +910,116 @@ the gallery height: */
 .galleria-theme-classic.galleria-container.videoplay .galleria-info,
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter{
 	display:none!important; 
+}
+
+@media (max-width: 480px){
+.section-header p {
+    font-size: 16px;
+}
+.panel-title{
+		font-size: 15px;
+}
+.main-form{
+	&-btn {
+
+	   border-radius: 50px;
+	   padding: 15px 10px;
+	   font-size: 13px;
+	}
+}
+#process{
+	p {
+		font-size: 12px;
+		}
+	h4{
+		font-size: 18px;
+	}
+}
+.main-text{
+	h1{
+		font-size: 25px;
+	}
+}
+.section-header {
+	h2{
+		font-size: 20px;
+	}
+	p{
+		font-size: 12px;
+	}
+}
+.process {
+	&-box{
+		margin-bottom: 50px;
+	}
+	&-btn {
+    left: 0; 
+    bottom: 7%;
+    width: 50%;
+    margin-left: 75px;
+    font-size: 13px;
+	}
+}
+.works-box{
+	img{
+		height: 100%;
+	}
+}
+.services-info {
+	p {
+    font-size: 13px;
+	}
+	h4{
+		font-size: 18px;
+	}
+}
+.feedback{
+	&-box{
+		margin-top: 80px;
+		padding: 15px;
+		img{
+			margin: 0 auto;
+			margin-bottom: 125px;
+			height: 90px;
+			border-radius: 50%;
+		}
+		p{
+			margin-top: 25px;
+			font-size: 13px;
+	}
+	&-slider-arrows{
+		transform: translateY(-8px);
+		padding: 7px 10px 10px 10px;
+		}
+	}
+}
+.arrow-right{
+	width: 25px;
+	height: 25px;
+	font-size: 10px;
+}
+.arrow-left{
+	width: 25px;
+	height: 25px;
+	font-size: 10px;
+}
+} 
+@media (min-width: 481px) and (max-width: 767px){
+
+}
+	
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1600px){
+
+}
+
+@media (min-width: 1601px) {
+
 }

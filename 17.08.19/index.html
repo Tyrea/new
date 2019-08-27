@@ -38,10 +38,11 @@
           <div class="col-lg-4">
             <div class="main-form">
               <p class="main-form-header"><span>Send</span> A Message</p>
-              <form action="#">
-                <input type="text" placeholder="Your Name">
-                <input type="email" required placeholder="Your E-mail">
-                <textarea placeholder="Your Message" rows="3"></textarea>
+              <form id="main-form-ajax" method="POST">
+                <input type="hidden" name="whatever" value="Главная форма">
+                <input type="text" name="username" placeholder="Your Name">
+                <input type="email" name="email" required placeholder="Your E-mail">
+                <textarea placeholder="Your Message" name="user_message" rows="3"></textarea>
                 <button class="main-form-btn" type="submit">Send Message <span>&#8594;</span></button>
               </form>
             </div>
@@ -58,41 +59,38 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3">
-            <div class="process-box box-tomi wow rotateIn" data-wow-delay="0.2s">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="process-box pagination-centered box-tomi wow rotateIn" data-wow-delay="0.2s">
               <i class="fa fa-magnet"></i> 
               <h4>Koc Koi Tomi</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <button class="process-btn"><a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger"s><span class="btn-plus"></span  >Know More</a></button>
+                <button class="process-btn"><a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger"s><span class="btn-plus"></span>Know More</a></button>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="process-box box-koimona wow rotateIn" data-wow-delay="0.4s">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="process-box pagination-centered box-koimona wow rotateIn" data-wow-delay="0.4s">
               <i class="fa fa-bug"></i> 
               <h4>Koimona Set</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <button class="process-btn"><span class="btn-plus"></span  >Know More</button>
+                <button class="process-btn"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="process-box box-koire wow rotateIn" data-wow-delay="0.6s">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="process-box pagination-centered box-koire wow rotateIn" data-wow-delay="0.6s">
               <i class="fa fa-cogs"></i> 
               <h4>Setting Koire</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <button class="process-btn"><span class="btn-plus"></span  >Know More</button>
+                <button class="process-btn"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="process-box box-lara wow rotateIn" data-wow-delay="0.8s">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="process-box pagination-centered box-lara wow rotateIn" data-wow-delay="0.8s">
               <i class="fa fa-camera-retro"></i> 
               <h4>Ko Image Lara</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <button class="process-btn"><span class="btn-plus"></span  >Know More</button>
+                <button class="process-btn"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3"></div>
         </div>
       </div>
     </section>
@@ -107,7 +105,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.2s">
               <img src="img/works.jpg" alt="works">
               <div class="signature">
@@ -118,7 +116,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.4s">
               <img src="img/works2.jpg" alt="works">
               <div class="signature">
@@ -129,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.6s">
               <img src="img/works3.jpg" alt="works">
               <div class="signature">
@@ -140,10 +138,7 @@
               </div>
             </div>
           </div>
-        </div> <!-- /row -->
-
-        <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.2s">
               <img src="img/works4.jpg" alt="works">
               <div class="signature">
@@ -154,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.4s">
               <img src="img/works5.jpg" alt="works">
               <div class="signature">
@@ -165,7 +160,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.6s">
               <img src="img/works6.jpg" alt="works">
               <div class="signature">
@@ -176,10 +171,7 @@
               </div>
             </div>
           </div>
-        </div> <!-- /row -->
-
-        <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.2s">
               <img src="img/works7.jpg" alt="works">
               <div class="signature">
@@ -190,7 +182,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.4s">
               <img src="img/works8.jpg" alt="works">
               <div class="signature">
@@ -201,7 +193,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-3">
             <div class="works-box wow pulse" data-wow-delay="0.6s">
               <img src="img/works9.jpg" alt="works">
               <div class="signature">
@@ -475,6 +467,22 @@
       </div>
      </div>
 
+     <div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel"><span>Thank</span> You!</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+          Благодарим за заявку!
+          </div>
+          <div class="modal-footer">
+            <button class="modal-footer-btn" type="submit">Close this window</button>
+          </div>
+        </div>
+      </div>
+     </div>
     <!-- --- SVG-MODAL----  -->
     <div class="cd-modal" data-modal="modal-trigger">
       <div class="cd-svg-bg" 
@@ -524,12 +532,13 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/snap.svg-min.js"></script>
     <script src="js/main.js"></script> 
+    <script src="js/ajax.js"></script>
     <!-- ANIMATION -->
     <script src="js/wow.min.js"></script>
     <script>
@@ -546,7 +555,32 @@
           arrows: true,
           prevArrow: '<i class="fa fa-chevron-left feedback-slider-arrows arrow-left"></i>',
           nextArrow: '<i class="fa fa-chevron-right feedback-slider-arrows arrow-right"></i>',
-          dots: true
+          dots: true,
+          responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          ]
         });
       });
     </script>
@@ -554,7 +588,6 @@
       $(function() {
           // Load the classic theme
           Galleria.loadTheme('classic/galleria.classic.js');
-
           // Initialize Galleria
           Galleria.run('#galleria');
       });
