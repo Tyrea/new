@@ -64,13 +64,14 @@ header{
 .header-logo-border{
 	width: 148px;
 	height: 50px;
-	border: 3px solid @base-black;
+	border: 3px solid @white;
 	text-align: center;
 	line-height: 42px;
 	font-size: 36px;
 }
 .header-logo-border p{
 	.opn-bold;
+	color:@white;
 }
 .header-logo-border span{
 	color: lighten(@base-red, 5%);;
@@ -79,6 +80,7 @@ header{
 .main-nav{
 	text-align: right;
 }
+
 .main-burger-menu{
 	width: 35px;
 }
@@ -86,7 +88,7 @@ header{
 	display: block;
 	width: 35px;
 	height: 4px;
-	background-color: @base-black;
+	background-color: @white;
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -100,7 +102,7 @@ header{
 	position: absolute;
 	width: 35px;
 	height: 4px;
-	background-color: @base-black;
+	background-color: @white;
 	right: 0;
 	top: 0;
 	content: '';
@@ -109,12 +111,13 @@ header{
 	-ms-transform: translateY(-8px);
 	-o-transform: translateY(-8px);
 	transform: translateY(-8px);
+	transition: all 0.2s;
 }
 .line::after {
 	position: absolute;
 	width: 35px;
 	height: 4px;
-	background-color: @base-black;
+	background-color: @white;
 	right: 0;
 	top: 0;
 	content: '';
@@ -123,22 +126,23 @@ header{
 	-ms-transform: translateY(8px);
 	-o-transform: translateY(8px);
 	transform: translateY(8px);
+	transition: all 0.2s;
 }
 .main{
 	&-text{
 		margin-top: 3%;		
 		text-align: center;
 		h1{
-			color: @base-text;
 			font-size: 50px;
 			.opn-bold;
-
+			color: @white;
 		}
 		span{
 			color: @base-red;
 		}
 		p{
 			.opn-reg;
+			color:@white;
 		}
 	}
 	&-form{
@@ -368,9 +372,10 @@ i.fa-camera-retro{
 	background-color: @background-grey;
 	text-align: center;
 	.opn-bold;
-	 a{color:@base-red;
+	a{
+	 	color:@base-red;
 	 	text-decoration: none;
-	 }
+	}
 	
 }
 .feedback{
@@ -1011,7 +1016,6 @@ the gallery height: */
 @media (min-width: 768px) and (max-width: 991px){
 
 }
-
 @media (min-width: 992px) and (max-width: 1199px){
 
 }
@@ -1022,4 +1026,90 @@ the gallery height: */
 
 @media (min-width: 1601px) {
 
+}
+
+.overlay-nav{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	ul{
+		list-style: none;
+		text-align:center;
+		padding-top: 10%;
+		line-height: 2.5;
+		li a{
+			
+			font-size: 36px;
+			.opn-bold;
+			color:@white;
+		}
+	}
+}
+.close-nav{
+	position: fixed;
+	font-size: 50px;
+	top: 5%;
+	right: 5%;
+	color: @white;
+	&:hover{
+		cursor:pointer;
+	}
+}
+header{
+	position:relative;
+}
+.no-video .video-container video,
+  .touch .video-container video {
+    display: none;
+  }
+
+  .no-video .video-container .poster,
+  .touch .video-container .poster {
+    display: block !important;
+  }
+
+  .video-container {
+  	padding-top: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+
+  .video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+  }
+
+  .video-container video.fillWidth {
+    width: 100%;
+  }
+
+  .layer img{
+  	width: 350px;
+  }
+  .parallax-window {
+    min-height: 600px;
+    background: transparent;
 }
